@@ -1,0 +1,358 @@
+body{
+  margin: 0;
+  padding:0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  overflow-x: hidden;  
+  position: relative;
+font-family:roboto,serif;
+
+}
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --primary_color:#A9A9A9;
+    --secondary_color: #FF4500;
+    --tertiary_color: #000080;
+    --quat_color: #6B8E23;
+  }
+.content-wrapper{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.section-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.center-align{
+    text-align: center;
+}
+.left-align{
+    text-align: left;
+}
+.right-align{
+    text-align: right;
+}
+.wrapper-padd{
+    padding: 0px;
+}
+.all-text-white,
+.all-text-white h1,
+.all-text-white h2,
+.all-text-white h3,
+.all-text-white h4,
+.all-text-white h5,
+.all-text-white h6,
+.all-text-white p,
+.all-text-white a{
+    color: var(--white);
+}
+.all-text-black,
+.all-text-black h1,
+.all-text-black h2,
+.all-text-black h3,
+.all-text-black h4,
+.all-text-black h5,
+.all-text-black h6,
+.all-text-black p,
+.all-text-black a{
+    color: var(--black);
+}
+.all-text-primary,
+.all-text-primary h1,
+.all-text-primary h2,
+.all-text-primary h3,
+.all-text-primary h4,
+.all-text-primary h5,
+.all-text-primary h6,
+.all-text-primary p,
+.all-text-primary a{
+    color: var(--primary_color);
+}
+.all-text-secondary,
+.all-text-secondary h1,
+.all-text-secondary h2,
+.all-text-secondary h3,
+.all-text-secondary h4,
+.all-text-secondary h5,
+.all-text-secondary h6,
+.all-text-secondary p,
+.all-text-secondary a{
+    color: var(--secondary_color);
+}
+.all-text-tertiary,
+.all-text-tertiary h1,
+.all-text-tertiary h2,
+.all-text-tertiary h3,
+.all-text-tertiary h5,
+.all-text-tertiary h6,
+.all-text-tertiary p,
+.all-text-tertiary a{
+    color: var(--tertiary_color);
+}
+.all-text-quat,
+.all-text-quat h1,
+.all-text-quat h2,
+.all-text-quat h3,
+.all-text-quat h4,
+.all-text-quat h5,
+.all-text-quat h6,
+.all-text-quat p,
+.all-text-quat a{
+    color: var(--quat_color);
+}
+.text-white,
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white a{
+    color: var(--white);
+}
+.text-black,
+.text-black h1,
+.text-black h2,
+.text-black h3,
+.text-black h4,
+.text-black h5,
+.text-black h6,
+.text-black p,
+.text-black a{
+    color: var(--black);
+}
+.text-primary,
+.text-primary h1,
+.text-primary h2,
+.text-primary h3,
+.text-primary h4,
+.text-primary h5,
+.text-primary h6,
+.text-primary p,
+.text-primary a{
+    color: var(--primary_color);
+}
+.text-secondary,
+.text-secondary h1,
+.text-secondary h2,
+.text-secondary h3,
+.text-secondary h4,
+.text-secondary h5,
+.text-secondary h6,
+.text-secondary p,
+.text-secondary a{
+    color: var(--secondary_color);
+}
+.text-tertiary,
+.text-tertiary h1,
+.text-tertiary h2,
+.text-tertiary h3,
+.text-tertiary h4,
+.text-tertiary h5,
+.text-tertiary h6,
+.text-tertiary p,
+.text-tertiary a{
+    color: var(--tertiary_color);
+}
+.text-quat,
+.text-quat h1,
+.text-quat h2,
+.text-quat h3,
+.text-quat h4,
+.text-quat h5,
+.text-quat h6,
+.text-quat p,
+.text-quat a{
+    color: var(--quat_color);
+}
+.fw-8,
+.fw-8 h1,
+.fw-8 h2,
+.fw-8 h3,
+.fw-8 h4,
+.fw-8 h5,
+.fw-8 h6,
+.fw-8 p,
+.fw-8 a{
+    font-weight: 800;
+}
+.fw-7,
+.fw-7 h1,
+.fw-7 h2,
+.fw-7 h3,
+.fw-7 h4,
+.fw-7 h5,
+.fw-7 h6,
+.fw-7 p,
+.fw-7 a{
+    font-weight: 700;
+}
+.fw-6,
+.fw-6 h1,
+.fw-6 h2,
+.fw-6 h3,
+.fw-6 h4,
+.fw-6 h5,
+.fw-6 h6,
+.fw-6 p,
+.fw-6 a{
+    font-weight: 600;
+}
+.fw-5,
+.fw-5 h1,
+.fw-5 h2,
+.fw-5 h3,
+.fw-5 h4,
+.fw-5 h5,
+.fw-5 h6,
+.fw-5 p,
+.fw-5 a{
+    font-weight: 500;
+}
+.fw-4,
+.fw-4 h1,
+.fw-4 h2,
+.fw-4 h3,
+.fw-4 h4,
+.fw-4 h5,
+.fw-4 h6,
+.fw-4 p,
+.fw-4 a{
+    font-weight:400;
+}
+  
+h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--primary_color);
+    letter-spacing: 0px;
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: var(--secondary_color);
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: var(--primary_color);
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+h4{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--primary_color);
+    letter-spacing: 0px;
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+h5{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--tertiary_color);
+    letter-spacing: 0px;
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+h6{
+    font-size:18px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: var(--quat_color);
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    letter-spacing: 0px;
+    margin:0;
+    margin-bottom: 30px;
+    font-family: roboto,serif;
+
+}
+a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: var(--primary_color);
+    text-decoration: none;
+    margin:0;
+    font-family: roboto,serif;
+
+}
+ul li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:767px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
